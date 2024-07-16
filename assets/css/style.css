@@ -91,7 +91,11 @@ header .navbar-toggler:focus
 }
 
 .form{
+<<<<<<< HEAD
 	background-color: #efefefc0 !important;
+=======
+	/* background-color: #efefef !important; */
+>>>>>>> 652734ae3cff762dfddb55b10401d73d1be43254
 	/* color: white !important; */
 	/* backdrop-filter: blur(90px); */
 	/* box-shadow: 0px 0px 6px  #0000005f; */
