@@ -150,7 +150,7 @@ router.post('/api/forgot-password', async (req, res) => {
     user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
     await user.save();
 
-    const resetUrl = `http://localhost:${process.env.PORT}/auth/reset-password?token=${token}`;
+    const resetUrl = `https://food-donation-3.onrender.com/auth/reset-password?token=${token}`;
 
     const mailOptions = {
       from: process.env.EMAIL,
