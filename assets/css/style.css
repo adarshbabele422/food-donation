@@ -91,11 +91,7 @@ header .navbar-toggler:focus
 }
 
 .form{
-<<<<<<< HEAD
-	background-color: #efefefc0 !important;
-=======
 	/* background-color: #efefef !important; */
->>>>>>> 652734ae3cff762dfddb55b10401d73d1be43254
 	/* color: white !important; */
 	/* backdrop-filter: blur(90px); */
 	/* box-shadow: 0px 0px 6px  #0000005f; */
@@ -114,6 +110,7 @@ header .navbar-toggler:focus
 	border: none;
 	border-radius: 0px;
 	border-bottom: 1px solid rgb(143, 140, 140);
+	/* outline: none; */
 
 }
 
@@ -159,14 +156,21 @@ header .navbar-toggler:focus
 	object-fit: cover;
 	object-position: center;
 }
+
 #carousel .carousel-control-prev-icon, #carousel .carousel-control-next-icon
 {
 	transform: scaleX(1.5) scaleY(2);
-	background-color: #000000;
+	background-color: #00000000;
 	cursor: pointer;
 }
 
-
+@media screen and (max-width:765px) {
+	#carousel img
+	{
+	/* width: 100vw; */
+	height: 50vh;
+	}
+}
 .form-date-input
 {
 	display: block;
