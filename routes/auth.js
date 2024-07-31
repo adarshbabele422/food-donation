@@ -150,7 +150,7 @@ router.post('/api/forgot-password', async (req, res) => {
     user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
     await user.save();
 
-    const resetUrl = `http://localhost:5000/auth/reset-password?token=${token}`;
+    const resetUrl = `${process.env.PORT}/auth/reset-password?token=${token}`;
 
     const mailOptions = {
       from: process.env.EMAIL,
